@@ -163,7 +163,7 @@ public class PlayWriter {
     }
 
 
-    //A novel consists of introduction, conflict, climax and denouement
+    //A novel consists of introduction, conflict, climax and dénouement
     public void writeNovel() {
         System.out.println("PlayWriter: The Most Excellent and Lamentable Tragedy of Romeo and Juliet.");
         System.out.println("PlayWriter: A play in IV acts.");
