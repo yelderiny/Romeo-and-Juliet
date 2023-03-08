@@ -32,14 +32,12 @@ public class Juliet extends Actor {
         return getAcquaintanceHelper();
     }
 
-
     //Retrieves the lover's love
     protected double receiveLoveLetter() {
         double letter = receiveLoveLetterHelper();
         System.out.println("Juliet: Romeo, Romeo! Wherefore art thou Romeo? (<-" + letter + ")");
         return letter;
     }
-
 
     //Love (The ODE system)
     //Given the lover's love at time t, estimate the next love value for Romeo
@@ -50,7 +48,6 @@ public class Juliet extends Actor {
                        Take him and cut him out in little stars.""");
         current = current + (-constant * partnerLove);
     }
-
 
     //Communicate love back to playwriter
     protected void declareLove() {

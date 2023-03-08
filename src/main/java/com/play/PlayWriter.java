@@ -59,7 +59,6 @@ public class PlayWriter {
         System.out.println("PlayWriter: I've made acquaintance with Juliet");
     }
 
-
     //Request next verse: Send letters to lovers communicating the partner's love in previous verse
     public void requestVerseFromRomeo(int verse) {
         System.out.println("PlayWriter: Requesting verse " + verse + " from Romeo. -> (" + theNovel[verse - 1][1] + ")");
@@ -76,7 +75,6 @@ public class PlayWriter {
         }
     }
 
-
     //Request next verse: Send letters to lovers communicating the partner's love in previous verse
     public void requestVerseFromJuliet(int verse) {
         System.out.println("PlayWriter: Requesting verse " + verse + " from Juliet. -> (" + theNovel[verse - 1][0] + ")");
@@ -92,7 +90,6 @@ public class PlayWriter {
             throw new RuntimeException(e);
         }
     }
-
 
     //Receive letter from Romeo with renovated love for current verse
     public void receiveLetterFromRomeo(int verse) {
@@ -131,7 +128,6 @@ public class PlayWriter {
         System.out.println("PlayWriter: Juliet's verse " + verse + " -> " + theNovel[verse][1]);
     }
 
-
     //Let the story unfold
     public void storyClimax() {
         for (int verse = 1; verse < novelLength; verse++) {
@@ -162,7 +158,6 @@ public class PlayWriter {
         }
     }
 
-
     //A novel consists of introduction, conflict, climax and dénouement
     public void writeNovel() {
         System.out.println("PlayWriter: The Most Excellent and Lamentable Tragedy of Romeo and Juliet.");
@@ -181,7 +176,6 @@ public class PlayWriter {
         this.charactersDeath();
 
     }
-
 
     //Dump novel to file
     public void dumpNovel() {

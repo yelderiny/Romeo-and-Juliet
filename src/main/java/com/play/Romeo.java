@@ -35,14 +35,12 @@ public class Romeo extends Actor {
         return letter;
     }
 
-
     //Love (The ODE system)
     //Given the lover's love at time t, estimate the next love value for Romeo
     protected void renovateLove(double partnerLove) {
         System.out.println("Romeo: But soft, what light through yonder window breaks?\nIt is the east, and Juliet is the sun.");
         current = current + (constant * partnerLove);
     }
-
 
     //Communicate love back to playwriter
     protected void declareLove() {
@@ -51,7 +49,6 @@ public class Romeo extends Actor {
     }
 
     //Execution
-
     @Override
     public void run() {
         super.run();
